@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Step1') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Clone Repository') {
+            steps {
+                script {
+                    sh '''cd /Users/dey/Desktop/ git clone https://github.com/td-heisenbug/frontend.git'''
+                    }
+                }
+            }
+        }
+        
+    }
