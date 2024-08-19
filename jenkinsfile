@@ -10,7 +10,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 script {
-                    sh '''cd /Users/dey/Desktop/ git clone https://github.com/td-heisenbug/frontend.git'''
+                    sh '''cd /Users/dey/Desktop/Badass/ git clone https://github.com/td-heisenbug/frontend.git'''
                     }
                 }
             }
